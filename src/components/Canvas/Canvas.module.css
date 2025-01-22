@@ -1,0 +1,21 @@
+.container {
+	border: 1px solid #d9d9d9;
+	border-radius: 14px;
+  margin-bottom: 20px;
+	width: 500px;
+	height: 500px;
+}
+
+@media (max-width: 540px) {
+	.container {
+		width: 400px;
+		height: 400px;
+	}
+}
+
+@media (max-width: 400px) {
+	.container {
+		width: 330px;
+		height: 330px;
+	}
+}

@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+	flex-direction: column;
+	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.button__clear {
+	height: 100%;
+	padding: 17px;
+}
+
+.header {
+  padding: 16px;
+  background-color: #f0f0f0;
+  text-align: center;
+}

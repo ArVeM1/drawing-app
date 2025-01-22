@@ -1,0 +1,42 @@
+.card {
+  max-height: 300px; 
+	border: 1px solid #d9d9d9;
+	border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+	padding-bottom: 15px;
+}
+
+.title {
+	padding: 0px 14px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.empty {
+	font-size: 14px;
+	font-weight: 800;
+	padding-left: 15px;
+}
+
+.commandsContainer {
+  overflow-y: auto; 
+  flex-grow: 1;
+}
+
+.command__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.command__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  border-bottom: 1px solid #f0f0f0; 
+}
+
+.command__item:last-child {
+  border-bottom: none; 
+}
