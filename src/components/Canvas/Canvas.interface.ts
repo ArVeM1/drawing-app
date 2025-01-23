@@ -1,1 +1,7 @@
-export type shapeAction = 'DRAW' | 'TEXT' | 'TRIANGLE' | 'LINE' | 'RECT' | 'CIRCLE';
+export type shapeAction =
+  | 'DRAW'
+  | 'TEXT'
+  | 'TRIANGLE'
+  | 'LINE'
+  | 'RECT'
+  | 'CIRCLE';
