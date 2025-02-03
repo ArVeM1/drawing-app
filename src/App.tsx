@@ -34,7 +34,7 @@ const App: FC = () => {
       <div className={styles.container}>
         <Row gutter={[16, 16]}>
           <Col xs={24} sm={24} md={16} lg={16} xl={16}>
-            <Canvas commands={commands} onDeleteCommand={handleDeleteCommand} />
+            <Canvas commands={commands} />
           </Col>
 
           <Col xs={24} sm={24} md={8} lg={8} xl={8}>

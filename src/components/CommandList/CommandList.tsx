@@ -1,32 +1,22 @@
 import { FC } from 'react';
 import { Button } from 'antd';
 import styles from './CommandList.module.css';
+import { emojiDict, EmojiKey } from './types';
 
-interface ICommandList {
+type ICommandList = {
   commands: string[];
   onDeleteCommand: (index: number) => void;
 }
 
 const CommandList: FC<ICommandList> = ({ commands, onDeleteCommand }) => {
+  
   const getEmojiForCommand = (command: string): string => {
     const [, action] = command.split(' ');
 
-    if (!action) return '🧹';
+    if (!action) return emojiDict.AREA;
 
-    switch (action.toUpperCase()) {
-      case 'RECT':
-        return '🔲';
-      case 'CIRCLE':
-        return '🔴';
-      case 'LINE':
-        return '➖';
-      case 'TRIANGLE':
-        return '🔺';
-      case 'AREA':
-        return '🧹';
-      default:
-        return '';
-    }
+    const upperAction = action.toUpperCase() as EmojiKey;
+    return emojiDict[upperAction] || '';
   };
 
   return (

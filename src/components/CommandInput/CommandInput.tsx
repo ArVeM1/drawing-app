@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import styles from './CommandInput.module.css';
 import { Input } from 'antd';
 
-interface ICommandInput {
+type ICommandInput = {
   onExecute: (command: string) => void;
 }
 
